@@ -1,17 +1,17 @@
 import pygame
 import random
-from tkinter import *
+import tkinter
 from tkinter import messagebox
 
 # Nastavení
 pygame.init()
 pygame.display.set_caption("Pong")
-Tk().wm_withdraw() # schová hlavní okno tkinter
+tkinter.Tk().wm_withdraw() # schová hlavní okno tkinter
 
 # Konstanty
 OKNO_SIRKA = 800
 OKNO_VYSKA = 600
-MAX_BODY = 5
+MAX_BODY = 1
 MIC_ZACATECNI_RYCHLOST = 2
 BARVA_BILA = (255, 255, 255)
 BARVA_MODRA = (0, 0, 120)
@@ -140,12 +140,12 @@ while True:
 
     # Zjisti, jestli někdo vyhrál
     if hrac1_skore == MAX_BODY:
-        messagebox.showinfo("Pong", f"{hrac1_skore} : {hrac2_skore}\nHráč 1 vyhrál!")
+        tkinter.messagebox.showinfo("Pong", f"{hrac1_skore} : {hrac2_skore}\nHráč 1 vyhrál!")
         hrac1_skore = 0
         hrac2_skore = 0
 
     elif hrac2_skore == MAX_BODY:
-        messagebox.showinfo("Pong", f"{hrac1_skore} : {hrac2_skore}\nHráč 2 vyhrál!")
+        tkinter.messagebox.showinfo("Pong", f"{hrac1_skore} : {hrac2_skore}\nHráč 2 vyhrál!")
         hrac1_skore = 0
         hrac2_skore = 0
 
