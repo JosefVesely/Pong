@@ -11,7 +11,7 @@ tkinter.Tk().wm_withdraw() # schová hlavní okno tkinter
 # Konstanty
 OKNO_SIRKA = 800
 OKNO_VYSKA = 600
-MAX_BODY = 1
+MAX_BODY = 5
 MIC_ZACATECNI_RYCHLOST = 2
 BARVA_BILA = (255, 255, 255)
 BARVA_MODRA = (0, 0, 120)
