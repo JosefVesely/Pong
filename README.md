@@ -4,4 +4,4 @@
 
 Use W, S, ↑ and ↓ keys to move the paddles
 
-<video src="gameplay.mp4" width="320" height="240" controls></video>
+<video src="https://github.com/JosefVesely/Pong/blob/main/gameplay.mp4" width="320" height="240" controls></video>
